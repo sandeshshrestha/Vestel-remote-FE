@@ -15,3 +15,57 @@ a {
 
 @tailwind components;
 @tailwind utilities;
+
+main {
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.button-group {
+  display: grid;
+  gap: 20px;
+}
+.button-group-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.button-group-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button {
+  border-radius: 5px;
+}
+
+button.with-padding {
+  padding: 10px;
+}
+
+button.with-border {
+  border: 1px solid #eee;
+}
+
+.button-group + .button-group {
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+button.short-text {
+  font-size: 30px;
+  font-weight: bold;
+}
+button.long-text {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+button.circle {
+  border-radius: 50%;
+}
+
+button > * {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
